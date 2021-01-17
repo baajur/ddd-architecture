@@ -1,0 +1,18 @@
+[package]
+name = "domain"
+version = "0.1.0"
+authors = ["Mathieu Tricoire <mathieu@tricoi.re>"]
+edition = "2018"
+
+[dependencies]
+async-trait = "0.1.42"
+shaku = "0.5.0"
+identifier = { git = "https://github.com/MathieuTricoire/identifier", branch = "support-u64-u32" }
+uuid = { version = "0.8.1", features = ["v4"] }
+thiserror = "1.0.22"
+anyhow = "1.0.34"
+tracing = "0.1.22"
+tracing-futures = "0.2.4"
+
+[dev-dependencies]
+tokio = { version = "0.3.0", features = ["full"] }

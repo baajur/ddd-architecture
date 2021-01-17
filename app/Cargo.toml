@@ -1,0 +1,11 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["Mathieu Tricoire <mathieu@tricoi.re>"]
+edition = "2018"
+
+[dependencies]
+domain = { path = "../domain" }
+infrastructure = { path = "../infrastructure" }
+shaku = "0.5.0"
+tokio = { version = "0.2.23", features = ["full"] }

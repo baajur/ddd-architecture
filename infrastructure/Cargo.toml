@@ -1,0 +1,16 @@
+[package]
+name = "infrastructure"
+version = "0.1.0"
+authors = ["Mathieu Tricoire <mathieu@tricoi.re>"]
+edition = "2018"
+
+[dependencies]
+domain = { path = "../domain" }
+async-trait = "0.1.42"
+shaku = "0.5.0"
+tokio = { version = "0.2.23", features = ["full"] } # optional and depdendent of feature flag?
+sqlx = { version = "0.4.1", features = ["runtime-tokio-native-tls", "postgres", "uuid"] }
+dotenv = "0.15.0"
+tracing = "0.1.22"
+tracing-futures = "0.2.4"
+

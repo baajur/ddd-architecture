@@ -1,10 +1,7 @@
-[package]
-name = "rust_n_clean_architecture"
-version = "0.1.0"
-authors = ["Mathieu Tricoire <mathieu@tricoi.re>"]
-edition = "2018"
-
-[dependencies]
-async-trait = "0.1"
-shaku = "0.5"
-tokio = { version = "0.3", features = ["full"] }
+[workspace]
+members = [
+    "domain",
+    "infrastructure",
+    "app",
+    "web",
+]

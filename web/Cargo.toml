@@ -1,0 +1,24 @@
+[package]
+name = "web"
+version = "0.1.0"
+authors = ["Mathieu Tricoire <mathieu@tricoi.re>"]
+edition = "2018"
+
+[dependencies]
+domain = { path = "../domain" }
+infrastructure = { path = "../infrastructure" }
+shaku = "0.5.0"
+actix-web = "3.3.2"
+futures = "0.3.8"
+tokio = { version = "0.2", features = ["macros", "rt-core"] }
+async-graphql = "2.1.7"
+async-graphql-actix-web = "2.1.7"
+slab = "0.4.2"
+once_cell = "1.5.2"
+actix-rt = "1.1.1"
+tracing = "0.1.22"
+tracing-bunyan-formatter = "0.1.7"
+tracing-log = "0.1.1"
+tracing-subscriber = { version = "0.2.15", features = ["registry", "env-filter"] }
+tracing-actix-web = "0.2.1"
+tracing-futures = "0.2.4"
